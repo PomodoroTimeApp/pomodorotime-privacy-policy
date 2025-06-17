@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Pomodoro Time | Política de Privacidad</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #DC2626;
+            border-bottom: 3px solid #DC2626;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #374151;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #4B5563;
+        }
+        .highlight {
+            background: #FEF3C7;
+            padding: 15px;
+            border-left: 4px solid #F59E0B;
+            margin: 20px 0;
+        }
+        .date {
+            background: #EFF6FF;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .language-switch {
+            text-align: center;
+            margin-bottom: 30px;
+            background: #F3F4F6;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .language-btn {
+            background: #DC2626;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 0 10px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .language-btn:hover {
+            background: #B91C1C;
+        }
+        .language-btn.active {
+            background: #059669;
+        }
+        .language-content {
+            display: none;
+        }
+        .language-content.active {
+            display: block;
+        }
+        .flag {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+    </style>
+    <script>
+        function showLanguage(lang) {
+            // Hide all language contents
+            document.querySelectorAll('.language-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelectorAll('.language-btn').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show selected language
+            document.getElementById(lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+        
+        window.onload = function() {
+            showLanguage('english'); // Default to English
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <h3 style="margin-top: 0;">🌍 Choose Your Language / Elige tu Idioma</h3>
+            <button id="btn-english" class="language-btn" onclick="showLanguage('english')">
+                <span class="flag">🇺🇸</span>English
+            </button>
+            <button id="btn-spanish" class="language-btn" onclick="showLanguage('spanish')">
+                <span class="flag">🇪🇸</span>Español
+            </button>
+        </div>
+
+        <!-- ENGLISH VERSION -->
+        <div id="english" class="language-content">
+            <h1>🍅 Privacy Policy - Pomodoro Time</h1>
+            
+            <div class="date">
+                <strong>Effective Date:</strong> 06/18/2025
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p>This Privacy Policy describes how Pomodoro Time ("we," "our," or "the application") collects, uses, and protects information when you use our mobile application. We are committed to protecting your privacy and handling your data responsibly.</p>
+
+            <h2>2. Information We Collect</h2>
+            
+            <h3>2.1 Automatically Collected Data</h3>
+            <p>When you use our application, we automatically collect certain information anonymously:</p>
+            
+            <div class="highlight">
+                <strong>Application Usage Data:</strong>
+                <ul>
+                    <li>Daily, weekly, and monthly active users</li>
+                    <li>Average session time per user</li>
+                    <li>User retention metrics (Day 1, Day 7, Day 30, Month 2, Month 3, Month 6)</li>
+                    <li>Number of pomodoros completed per day (aggregated from all users)</li>
+                    <li>Hourly usage distribution based on user's local time</li>
+                    <li>Time the application remains in the foreground</li>
+                    <li>Application settings used (vibration mode, keep screen on)</li>
+                </ul>
+            </div>
+
+            <h3>2.2 Location Data</h3>
+            <ul>
+                <li>Approximate city and country (based on IP address)</li>
+                <li><strong>Note:</strong> We do not collect precise GPS location</li>
+            </ul>
+
+            <h3>2.3 User-Provided Data</h3>
+            <ul>
+                <li>Application settings (work duration, breaks, preferences)</li>
+                <li>Language preferences</li>
+                <li>Dark/light mode settings</li>
+            </ul>
+
+            <h2>3. How We Use Information</h2>
+            <p>We use the collected information to:</p>
+            <ul>
+                <li><strong>Improve the application:</strong> Analyze usage patterns to optimize features and performance</li>
+                <li><strong>Statistical analysis:</strong> Understand how users interact with different features</li>
+                <li><strong>Technical support:</strong> Identify and resolve technical issues</li>
+                <li><strong>Product development:</strong> Inform decisions about new features</li>
+                <li><strong>Performance analysis:</strong> Monitor application performance and stability</li>
+            </ul>
+
+            <h2>4. Legal Basis for Processing</h2>
+            <p>We process your data under the following legal bases:</p>
+            <ul>
+                <li><strong>Consent:</strong> When you explicitly accept data collection through analytics settings</li>
+                <li><strong>Legitimate interests:</strong> To improve and maintain application functionality</li>
+                <li><strong>Compliance obligations:</strong> To comply with applicable regulations</li>
+            </ul>
+
+            <h2>5. Data Sharing and Disclosure</h2>
+            
+            <h3>5.1 Third-Party Service Providers</h3>
+            <p>We use the following third-party services that may have access to your data:</p>
+            <ul>
+                <li><strong>Google Firebase Analytics:</strong> For usage and performance analytics</li>
+                <li><strong>Google Play Services:</strong> For basic Android functionalities</li>
+            </ul>
+
+            <h3>5.2 We Don't Sell Personal Data</h3>
+            <p>We do not sell, rent, or trade your personal data to third parties.</p>
+
+            <h2>6. Your Rights and Controls</h2>
+            
+            <h3>6.1 Data Collection Control</h3>
+            <div class="highlight">
+                <ul>
+                    <li>You can disable analytics data collection at any time through the app settings</li>
+                    <li>Disabling does not affect the core functionality of the application</li>
+                </ul>
+            </div>
+
+            <h3>6.2 GDPR Rights (for EU users)</h3>
+            <ul>
+                <li><strong>Access:</strong> Right to know what data we have about you</li>
+                <li><strong>Rectification:</strong> Right to correct inaccurate data</li>
+                <li><strong>Erasure:</strong> Right to request deletion of your data</li>
+                <li><strong>Portability:</strong> Right to receive your data in structured format</li>
+                <li><strong>Objection:</strong> Right to object to certain types of processing</li>
+            </ul>
+
+            <h2>7. Data Security</h2>
+            <p>We implement appropriate technical and organizational security measures to protect your data:</p>
+            <ul>
+                <li>Data encryption in transit using HTTPS</li>
+                <li>Data anonymization whenever possible</li>
+                <li>Limited data access to authorized personnel only</li>
+                <li>Regular security reviews</li>
+            </ul>
+
+            <h2>8. Children's Privacy</h2>
+            <p>Our application is not directed to children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+
+            <h2>9. Contact</h2>
+            <p>If you have questions about this Privacy Policy or our data practices, you can contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> pomodorotime.app@gmail.com</li>
+                <li><strong>App:</strong> Through the application settings</li>
+            </ul>
+
+            <div class="highlight">
+                <p><strong>Last updated:</strong> 06/18/2025</p>
+                <p>This privacy policy complies with GDPR, CCPA, and Google Play Store policies.</p>
+            </div>
+        </div>
+
+        <!-- SPANISH VERSION -->
+        <div id="spanish" class="language-content">
+            <h1>🍅 Política de Privacidad - Pomodoro Time</h1>
+            
+            <div class="date">
+                <strong>Fecha de vigencia:</strong> 18/06/2025
+            </div>
+
+            <h2>1. Introducción</h2>
+            <p>Esta Política de Privacidad describe cómo Pomodoro Time ("nosotros", "nuestro" o "la aplicación") recopila, utiliza y protege la información cuando utiliza nuestra aplicación móvil. Nos comprometemos a proteger su privacidad y manejar sus datos de manera responsable.</p>
+
+            <h2>2. Información que Recopilamos</h2>
+            
+            <h3>2.1 Datos Recopilados Automáticamente</h3>
+            <p>Cuando utiliza nuestra aplicación, recopilamos automáticamente cierta información de forma anónima:</p>
+            
+            <div class="highlight">
+                <strong>Datos de Uso de la Aplicación:</strong>
+                <ul>
+                    <li>Usuarios activos diarios, semanales y mensuales</li>
+                    <li>Tiempo promedio de sesión por usuario</li>
+                    <li>Métricas de retención de usuarios (Día 1, Día 7, Día 30, Mes 2, Mes 3, Mes 6)</li>
+                    <li>Número de pomodoros completados por día (agregado de todos los usuarios)</li>
+                    <li>Distribución horaria de uso basada en la hora local del usuario</li>
+                    <li>Tiempo que la aplicación permanece en primer plano</li>
+                    <li>Configuraciones de la aplicación utilizadas (modo vibración, pantalla encendida)</li>
+                </ul>
+            </div>
+
+            <h3>2.2 Datos de Ubicación</h3>
+            <ul>
+                <li>Ciudad y país aproximados (basados en la dirección IP)</li>
+                <li><strong>Nota:</strong> No recopilamos ubicación GPS precisa</li>
+            </ul>
+
+            <h3>2.3 Datos Proporcionados por el Usuario</h3>
+            <ul>
+                <li>Configuraciones de la aplicación (duración de trabajo, descansos, preferencias)</li>
+                <li>Preferencias de idioma</li>
+                <li>Configuraciones de modo oscuro/claro</li>
+            </ul>
+
+            <h2>3. Cómo Utilizamos la Información</h2>
+            <p>Utilizamos la información recopilada para:</p>
+            <ul>
+                <li><strong>Mejorar la aplicación:</strong> Analizar patrones de uso para optimizar características y rendimiento</li>
+                <li><strong>Análisis estadístico:</strong> Comprender cómo los usuarios interactúan con diferentes funciones</li>
+                <li><strong>Soporte técnico:</strong> Identificar y resolver problemas técnicos</li>
+                <li><strong>Desarrollo de productos:</strong> Informar decisiones sobre nuevas características</li>
+                <li><strong>Análisis de rendimiento:</strong> Monitorear el rendimiento y la estabilidad de la aplicación</li>
+            </ul>
+
+            <h2>4. Base Legal para el Procesamiento</h2>
+            <p>Procesamos sus datos bajo las siguientes bases legales:</p>
+            <ul>
+                <li><strong>Consentimiento:</strong> Cuando usted acepta explícitamente la recopilación de datos a través de la configuración de analíticas</li>
+                <li><strong>Intereses legítimos:</strong> Para mejorar y mantener la funcionalidad de la aplicación</li>
+                <li><strong>Cumplimiento de obligaciones:</strong> Para cumplir con regulaciones aplicables</li>
+            </ul>
+
+            <h2>5. Compartir y Divulgación de Datos</h2>
+            
+            <h3>5.1 Proveedores de Servicios de Terceros</h3>
+            <p>Utilizamos los siguientes servicios de terceros que pueden tener acceso a sus datos:</p>
+            <ul>
+                <li><strong>Google Firebase Analytics:</strong> Para análisis de uso y rendimiento</li>
+                <li><strong>Google Play Services:</strong> Para funcionalidades básicas de Android</li>
+            </ul>
+
+            <h3>5.2 No Vendemos Datos Personales</h3>
+            <p>No vendemos, alquilamos ni comercializamos sus datos personales a terceros.</p>
+
+            <h2>6. Sus Derechos y Controles</h2>
+            
+            <h3>6.1 Control de Recopilación de Datos</h3>
+            <div class="highlight">
+                <ul>
+                    <li>Puede desactivar la recopilación de datos de análisis en cualquier momento a través de la configuración de la aplicación</li>
+                    <li>La desactivación no afecta la funcionalidad principal de la aplicación</li>
+                </ul>
+            </div>
+
+            <h3>6.2 Derechos según RGPD (para usuarios de la UE)</h3>
+            <ul>
+                <li><strong>Acceso:</strong> Derecho a saber qué datos tenemos sobre usted</li>
+                <li><strong>Rectificación:</strong> Derecho a corregir datos inexactos</li>
+                <li><strong>Eliminación:</strong> Derecho a solicitar la eliminación de sus datos</li>
+                <li><strong>Portabilidad:</strong> Derecho a recibir sus datos en formato estructurado</li>
+                <li><strong>Objeción:</strong> Derecho a objetar ciertos tipos de procesamiento</li>
+            </ul>
+
+            <h2>7. Seguridad de los Datos</h2>
+            <p>Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger sus datos:</p>
+            <ul>
+                <li>Cifrado de datos en tránsito usando HTTPS</li>
+                <li>Anonimización de datos siempre que sea posible</li>
+                <li>Acceso limitado a datos solo por personal autorizado</li>
+                <li>Revisiones regulares de seguridad</li>
+            </ul>
+
+            <h2>8. Menores de Edad</h2>
+            <p>Nuestra aplicación no está dirigida a menores de 13 años. No recopilamos conscientemente información personal de niños menores de 13 años.</p>
+
+            <h2>9. Contacto</h2>
+            <p>Si tiene preguntas sobre esta Política de Privacidad o nuestras prácticas de datos, puede contactarnos:</p>
+            <ul>
+                <li><strong>Email:</strong> pomodorotime.app@gmail.com</li>
+                <li><strong>Aplicación:</strong> A través de la configuración de la aplicación</li>
+            </ul>
+
+            <div class="highlight">
+                <p><strong>Última actualización:</strong> 18/06/2025</p>
+                <p>Esta política de privacidad cumple con RGPD, CCPA y las políticas de Google Play Store.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
